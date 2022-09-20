@@ -1,8 +1,8 @@
-import { IProduct } from '../domain/interfaces/product.inerface';
+import { Product } from '../domain/models/product';
 
 export interface IRepository {
-    insertProduct(product: IProduct): Promise<number>;
-    getAllProduct(): Promise<IProduct[]>;
+    insertProduct(product: Product): Promise<number>;
+    getAllProduct(): Promise<Product[]>;
     deleteProduct(id: number): Promise<boolean>;
-    updateProduct(id: number, updates: IProduct): Promise<boolean>;
+    updateProduct(id: number, updates: any): Promise<boolean>;
 }

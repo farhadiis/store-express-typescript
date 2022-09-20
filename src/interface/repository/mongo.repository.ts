@@ -1,12 +1,12 @@
 import { IRepository } from '../../application/repository.interface';
-import { IProduct } from '../../domain/interfaces/product.inerface';
+import { Product } from "../../domain/models/product";
 
 export class MongoRepository implements IRepository {
-  insertProduct(product: IProduct): Promise<number> {
+  insertProduct(product: Product): Promise<number> {
     throw new Error('Method not implemented.');
   }
 
-  getAllProduct(): Promise<IProduct[]> {
+  getAllProduct(): Promise<Product[]> {
     throw new Error('Method not implemented.');
   }
 
@@ -14,7 +14,7 @@ export class MongoRepository implements IRepository {
     throw new Error('Method not implemented.');
   }
 
-  updateProduct(id: number, updates: IProduct): Promise<boolean> {
+  updateProduct(id: number, updates: any): Promise<boolean> {
     throw new Error('Method not implemented.');
   }
 

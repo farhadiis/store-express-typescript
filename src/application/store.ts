@@ -1,5 +1,4 @@
 import { Product } from '../domain/models/product';
-import { IProduct } from '../domain/interfaces/product.inerface';
 import { IStore } from '../domain/interfaces/store.interface';
 import { IRepository } from './repository.interface';
 
@@ -16,7 +15,7 @@ export class Store implements IStore {
         return this.repository.deleteProduct(id);
     }
 
-    async updateProduct(id: number, updates: IProduct): Promise<void> {
+    async updateProduct(id: number, updates: any): Promise<void> {
         await this.repository.updateProduct(id, updates);
     }
 
