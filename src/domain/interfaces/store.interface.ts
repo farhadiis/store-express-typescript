@@ -1,4 +1,4 @@
-import { Product } from './product';
+import { Product } from '../models/product';
 import { IProduct } from './product.inerface';
 
 export interface IStore {

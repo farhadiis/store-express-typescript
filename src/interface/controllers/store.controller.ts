@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import { Product } from '../../domain/product';
-import { IStore } from '../../domain/store.interface';
+import { Product } from '../../domain/models/product';
+import { IStore } from '../../domain/interfaces/store.interface';
 
 export class Controller {
     

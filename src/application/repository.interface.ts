@@ -1,4 +1,4 @@
-import { IProduct } from '../domain/product.inerface';
+import { IProduct } from '../domain/interfaces/product.inerface';
 
 export interface IRepository {
     insertProduct(product: IProduct): Promise<number>;

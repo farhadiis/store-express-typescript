@@ -1,6 +1,6 @@
-import { Product } from '../domain/product';
-import { IProduct } from '../domain/product.inerface';
-import { IStore } from '../domain/store.interface';
+import { Product } from '../domain/models/product';
+import { IProduct } from '../domain/interfaces/product.inerface';
+import { IStore } from '../domain/interfaces/store.interface';
 import { IRepository } from './repository.interface';
 
 export class Store implements IStore {

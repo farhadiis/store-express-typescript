@@ -1,5 +1,5 @@
 import { IRepository } from '../../application/repository.interface';
-import { IProduct } from '../../domain/product.inerface';
+import { IProduct } from '../../domain/interfaces/product.inerface';
 
 export class MongoRepository implements IRepository {
   insertProduct(product: IProduct): Promise<number> {

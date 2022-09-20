@@ -1,4 +1,4 @@
-import { IProduct } from './product.inerface';
+import { IProduct } from '../interfaces/product.inerface';
 
 export class Product implements IProduct {
     id!: number;
