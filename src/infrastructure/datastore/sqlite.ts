@@ -22,9 +22,9 @@ export class SQLite {
   private async init() {
     await this.run(`
       CREATE TABLE IF NOT EXISTS products (
-          id INT PRIMARY KEY, 
+          id INTEGER PRIMARY KEY, 
           name TEXT NOT NULL,
-          price TEXT NOT NULL,
+          price TEXT NOT NULL
           )
       `)
   }
